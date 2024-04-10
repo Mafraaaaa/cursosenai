@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <header>
+            <h1>localização</h1>
+            <img src="img/carro.11.jpg" alt="imagem 1" width="250" height="150">
+        
+    <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. Temos os melhores preços e modelos do mercado.</p>  
+
+      </header>
+      <hr>
+      <main>
+        <section>
+            <h3> Análise de cadastro</h3>
+            <p>preencha os campos abaixo e analisarmos seus dados.<br> Se tudo estiver ligaremos para marca uma visita.</p>
+            <form method="post" accept="#">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="digite seu Nome" required>
+                    <label>data de nascimento</label>
+                    <input type="date" name="data_nascimento" required>
+                    <label>telefone</label>
+                    <input type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx" required>
+                </fieldset>
+                <fieldset>
+                    <legend>CNH</legend>
+                    <label>Número do registro</label>
+                    <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
+                    <label>validade</label>
+                    <input type="date" name="validade"required>
+                </fieldset>
+                <fieldset>
+                    <legend>carro</legend>
+                    <label>modelo do carro</label>
+                    <select name="carro" required>
+                    <option value="">escolha um carro</option>
+                    <optgroup label="volkswagem"> <option value="gol">GOL</option>
+                        <option value="golf"> GOL</option>
+                        <option value="fox"> FOX </option>
+                    </optgroup>
+                       <optgroup label="fiat">
+                        <option value="uno"> uno</option>
+                        <option value="siena">siena</option>
+                        <option value="palio">palio</option>
+                       </optgroup>
+                       <optgroup label="nissan" > 
+                        <option value="frontier"> frontier</option>
+                        <option value="versa">versa</option>
+                        <option value="skyline">skyline GT-R</option>
+                    </optgroup>
+                </select>
+                </fieldset>
+                <br>
+                <button tabindex="submit">enviar dados</button>
+            </form>
+        </section>
+      </main>
+      <hr>
+      <footer>
+        <p>copyright 2023 - locação de Autos do dito</p>
+      </footer>
+</body>
+</html>
