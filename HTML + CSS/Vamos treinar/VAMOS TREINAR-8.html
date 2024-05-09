@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTILIZAÇÃO DE TABELA</title>
+    <style>
+        table{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td , caption{
+            padding:10px;
+        }
+        th, caption{
+            text-transform: uppercase;
+            border-top: 2px solid black;
+            border-bottom: 1px solid green;
+        }
+        th{
+            text-align: left;
+        }
+        caption{
+            font-size: 1.5em;
+            letter-spacing: 1.1em;
+            font-weight: 900;
+        }
+        tr.alternado{
+            background-color: rgb(232, 230, 230);
+        }
+        tr:hover{
+            background-color: yellowgreen;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+     <h1>Tabela Estilizada</h1>
+       <table>
+          <caption>Funcionários</caption>
+          <thead>
+        <tr>
+            <th>Código</th>
+            <th>NOME</th>
+            <th>IDADE</th>
+            <th>CIDADE</th>
+            <th class="numero">Salário</th>
+        </tr>
+          </thead>
+       <tbody>  
+        <tr class="alternado">
+            <td>001</td>
+            <td>João</td>
+            <td>26 anos</td>
+            <td>ourinhos</td>
+            <td class="numero">R$ 5.400,00</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>MARIA</td>
+            <td>25 ANOA</td>
+            <td>IPAUSSU</td>
+            <td class="numero">R$ 7.300,00</td>
+        </tr>
+
+        <tr class="alternado">
+            <td>003</td>
+            <td>JÓSE</td>
+            <td>21 ANOS</td>
+            <td>Canitar</td>
+            <td class="numero">R$ 3.100,00</td>
+        </tr>
+
+        <tr>
+            <td>004</td>
+            <td>ATÓNIA</td>
+            <td>32 ANOS</td>
+            <td>SCRPardo</td>
+            <td class="numero">R$ 5.400,00</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

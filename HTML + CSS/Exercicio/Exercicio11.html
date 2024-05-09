@@ -1,57 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio - 11</title>
-    <link rel="stylesheet" href="Estilo/exercicio11.CSS">
+
+    <title>Exercício 11</title>
+
+  <style>
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+main{
+    margin-top: 260px;
+}
+p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(222, 71, 144)
+}
+.menu_top{
+    width: 100%;
+    height: 150px;
+    border-top: 10px solid rgb(219, 112, 203); 
+    background-color: rgb(255, 255, 255);
+
+
+}
+.top_esp{
+    width: 140px;
+    float: left;
+    padding: 10px;
+
+}
+.top_dir{
+    float: left;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:100px;
+    color:rgb(221, 116, 134);
+    padding-left: 35px;
+    padding-top: 20px;
+
+}
+
+.clear{
+    clear: both;
+}
+
+.menu_down{
+    background-color: rgb(228, 41, 179); 
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul li{
+    background-color: rgb(213, 11, 99); 
+    width: 150px;
+    height: 40px;
+    float: left;
+    display: inline;
+    text-align: center;
+    line-height: 40px;
+    position:relative
+}
+.menu ul li:hover{
+    background-color: rgb(233, 91, 174);
+}
+.menu ul{
+    padding: 0;
+    max-width: 1000px;
+}
+.menu ul ul {
+    display: none;
+}
+.menu ul li:hover >ul{
+    display: block;
+}
+.menu ul ul ul{
+    margin-left: 131px;
+    position: absolute;
+    top: 0px;
+}
+.menu ul ul ul li:hover{
+    background-color: rgb(230, 69, 114);
+}
+.menu ul ul ul:hover{
+    background-color: rgb(236, 47, 100);
+}
+
+.clear {clear: both;}
+
+  </style>
+  
 </head>
 <body>
-    
     <header>
         <div class="menu_top">
             <div class="top_esp">
                 <figure>
-                    <img src="img/exercicio.11.svg" alt="logo" height="40px">
+                    <img src="img/exercicio 11.svg" alt="logo" height="80px">
                 </figure>
-        </div>
-
-        <div class="top_dir">
-            PETSHOP YOUNG PHOENIX
-        </div>
+            </div>
+            <div class="top_dir">
+                ONG ARCA E PETSHOP
+            </div>
+    
         <div class="clear"></div>
         <div class="menu_down">
-            <nav>
-                <span class="menu"><a href="#">HOME</a></span>
-                <span class="menu"><a href="#">RAÇÃO</a></span>
-                <span class="menu"><a href="#">BRIQUEDOS</a></span>
-                <span class="menu"><a href="#">ROPAS</a></span>
-                <span class="menu"><a href="#">BANHO E TOSA</a></span>
+            <nav class="menu">
+                <ul>
+                    <li ><a href="#">HOME</a></li>
+                    <li ><a href="#">SOBRE A ONG</a></li>
+                    <li ><a href="#">RAÇÃO</a>
+                        <ul>
+                            <li><a href="#">GATO</a></li>
+                            <li><a href="#">CACHORRO</a></li>
+                            <li><a href="#">PEIXE</a></li>
+                            <li><a href="#">OUTROS</a>
+                                <ul>
+                                    <li><a href="#">AVES</a></li>
+                                    <li><a href="#">RÉPTEIS</a></li>    
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BRINQUEDOS</a></li>
+                    <li><a href="#">BANHO E TOSA</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="meio">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ratione laudantium aspernatur maiores rerum explicabo ea quo molestias, similique minus laborum eveniet illo perspiciatis. Dolorum ratione tempore est illo omnis!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, corrupti ipsa esse magnam doloremque cum, expedita enim rem illum, nemo illo. Ea impedit ratione reiciendis eos vero, odio iusto! Sapiente!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, totam expedita consequatur perferendis pariatur consequuntur earum illum aperiam, enim id at voluptatem nulla quo rerum quos sed blanditiis incidunt nostrum!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ipsum quaerat, sint repellat blanditiis reprehenderit vero facilis soluta doloremque. Tenetur ipsam dolorem iste voluptatum molestiae ut ab, velit voluptas illo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempora ipsa, maiores quaerat tempore iste officiis accusamus minus magnam consectetur sed quas quasi illo dolorum deserunt? Commodi inventore alias laboriosam.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis necessitatibus distinctio harum illo consectetur velit accusamus incidunt iusto eveniet architecto corporis vero possimus neque, atque a suscipit, illum fugit!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur recusandae atque ex ullam, deleniti necessitatibus ut pariatur alias quidem saepe nobis dolores quam dolore incidunt. Exercitationem officiis asperiores iure error?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero amet quod nulla nostrum. Pariatur, corporis quae odio suscipit a odit labore facere similique, aspernatur, aperiam sunt recusandae quibusdam nobis optio!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut dolores deserunt vel nam nisi odit ex porro a veritatis dignissimos laboriosam dolor sint ea, neque maxime suscipit nemo recusandae illo!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, quas odit, neque aut officiis amet quibusdam consequatur doloribus ab voluptatum error tempora iure eaque necessitatibus est ex maxime? Molestias, explicabo!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora quas libero neque ipsum exercitationem cupiditate officiis harum quasi temporibus in, voluptatum, iusto, pariatur magni tempore asperiores maxime nesciunt magnam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique fugit necessitatibus nobis, impedit nulla provident, reprehenderit placeat ipsa in minus sed sunt rerum, illo earum doloremque et recusandae laboriosam aspernatur?
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, debitis itaque id expedita, dignissimos nisi earum optio accusamus qui ea accusantium at illum alias. Dignissimos laboriosam quasi rem voluptatibus incidunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis, reprehenderit perferendis consequuntur in quo magnam facere id quos tenetur sunt sapiente iste debitis non ipsam, cum aut veritatis velit!
-            </p>
-        </div>
 
+        <div class="meio">
+            
+                <p>Lorem ipsum dolor sit amet. Hic asperiores impedit et odit magni qui aperiam illum aut placeat quaerat id tempore ipsa qui iusto voluptates. Est explicabo voluptas hic enim asperiores ut nihil expedita? Aut enim quas ex necessitatibus deleniti et laudantium facere aut earum placeat quo doloremque velit ea veniam reprehenderit. Cum Quis illum est libero facilis vel assumenda sunt ut veritatis quidem.Ut minus itaque non cupiditate aperiam et provident possimus qui quas perspiciatis sed perspiciatis aspernatur est praesentium velit vel dolorem error. Et tempora molestiae aut ratione illum ut perspiciatis esse. Et praesentium molestias ut atque praesentium et eligendi galisum qui placeat dicta iusto internos ab reprehenderit commodi aut unde omnis. Cum quis delectus eum dignissimos exercitationem et enim iste ut impedit aliquam aut dolorem animi vel accusantium beatae et vitae commodi. Rem illo voluptatem eum velit labore id omnis iure eos odio voluptatem ad optio architecto eum adipisci possimus et fugiat reiciendis. Ut necessitatibus exercitationem At rerum tempore qui dolores consequuntur ea quis eaque eum nesciunt impedit sed eligendi voluptatem. A iste quod et similique alias vel consequatur doloribus et expedita fugiat in error animiQui enim aliquid qui possimus eveniet cum ipsam quia At galisum officiis et asperiores doloremque. Id enim dolorem ea recusandae dolor non distinctio ipsum et ratione suscipit? Sit dicta placeat ut praesentium omnis et velit odio ut minima numquam sed cupiditate quis aut cumque dolore?Est delectus quia id eligendi atque et saepe commodi sit aspernatur dolorum eum culpa dolore. Ut obcaecati delectus et praesentium optio est quas assumenda vel nobis aliquam aut animi reprehenderit sit voluptatem molestiae sed aperiam quiaassumenda facilis ea consequuntur perspiciatis ab autem perferendis 33 tempore ducimus. A natus ullam sed quia explicabo At provident eveniet et recusandae ipsum sed explicabo harum.Nam aliquam iste ut omnis accusantium hic quod nihil! Ad veritatis porro hic enim unde et voluptatem harum sit tempore harum 33 consequatur dolorem ab perspiciatis sint et accusamus consequuntur. Et ducimus autem ea tenetur dolor id </p>
+        </div>
     </main>
-    <footer>
-    </footer>
+        <footer>
+        </footer>
 </body>
 </html>
